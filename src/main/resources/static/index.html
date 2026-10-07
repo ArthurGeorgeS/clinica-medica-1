@@ -1,0 +1,7 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Clínica</title><link rel="stylesheet" href="/style.css"></head>
+<body><header><b>Sistema de Clínica</b><span><span id="user"></span><a href="/logout">Sair</a></span></header>
+<nav id="menu"></nav>
+<main><h2 id="titulo"></h2><button id="btnNovo" onclick="novo()">+ Novo</button>
+<form id="form" style="display:none" onsubmit="salvar(event)"><input type="hidden" id="f_id"><div id="campos"></div>
+<button>Salvar</button> <button type="button" onclick="desenhar()">Cancelar</button></form>
+<table id="tabela"></table></main><script src="/app.js"></script></body></html>
