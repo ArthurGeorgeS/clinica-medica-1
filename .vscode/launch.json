@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<clinica>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.clinica.Application",
+            "projectName": "clinica",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

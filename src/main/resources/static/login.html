@@ -1,0 +1,7 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Login - Clínica</title><link rel="stylesheet" href="/style.css"></head>
+<body><div class="box"><h2>Clínica - Acesso</h2>
+<p class="erro" id="e" style="display:none">Login ou senha inválidos.</p>
+<form method="post" action="/login"><label>Login<input name="username" required></label>
+<label>Senha<input type="password" name="password" required></label><button>Entrar</button></form>
+<p>Não tem acesso? <a href="/cadastro.html">Cadastre-se</a></p></div>
+<script>if(location.search.includes('erro'))document.getElementById('e').style.display='block'</script></body></html>

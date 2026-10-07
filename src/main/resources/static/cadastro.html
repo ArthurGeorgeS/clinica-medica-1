@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>Cadastro - Clínica</title><link rel="stylesheet" href="/style.css"></head>
+<body><div class="box"><h2>Cadastro de paciente</h2><p class="erro" id="m"></p>
+<form onsubmit="enviar(event)"><label>Nome<input id="nome" required></label><label>CPF<input id="cpf"></label>
+<label>Login<input id="login" required></label><label>Senha<input type="password" id="senha" required minlength="4"></label>
+<button>Cadastrar</button></form><p><a href="/login.html">Voltar ao login</a></p></div>
+<script>async function enviar(e){e.preventDefault();const g=i=>document.getElementById(i).value;
+const r=await fetch('/cadastro',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({nome:g('nome'),cpf:g('cpf'),login:g('login'),senha:g('senha')})});
+if(r.ok){alert('Cadastro realizado! Faça login.');location='/login.html'}else document.getElementById('m').textContent=await r.text()}</script></body></html>
